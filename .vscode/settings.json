@@ -1,0 +1,210 @@
+{
+    "[c]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "[cmake]": {
+        "editor.defaultFormatter": "cheshirekow.cmake-format"
+    },
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[jsonl]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "other": "off",
+            "strings": "off"
+        },
+        "editor.rulers": [
+            {
+                "color": "#FCE536",
+                "column": 81
+            }
+        ],
+        "editor.wordWrap": "bounded"
+    },
+    "better-comments.highlightPlainText": true,
+    "better-comments.tags": [
+        {
+            //! This is a comment template as an example to see
+            "bold": false,
+            "color": "#EF2929",
+            "italic": false,
+            "strikethrough": false,
+            "tag": "!",
+            "underline": false
+        },
+        {
+            //* This is a comment template as an example to see
+            "backgroundColor": "transparent",
+            "bold": false,
+            "color": "#8AE234",
+            "italic": false,
+            "strikethrough": false,
+            "tag": "*",
+            "underline": false
+        },
+        {
+            //^ This is a comment template as an example to see
+            "backgroundColor": "transparent",
+            "bold": false,
+            "color": "#FCE94F",
+            "italic": false,
+            "strikethrough": false,
+            "tag": "^",
+            "underline": false
+        },
+        {
+            //? This is a comment template as an example to see
+            "backgroundColor": "transparent",
+            "bold": false,
+            "color": "#729FCF",
+            "italic": false,
+            "strikethrough": false,
+            "tag": "?",
+            "underline": false
+        },
+        {
+            //~ This is a comment template as an example to see
+            "backgroundColor": "transparent",
+            "bold": false,
+            "color": "#AD7FA8",
+            "italic": false,
+            "strikethrough": false,
+            "tag": "~",
+            "underline": false
+        },
+        {
+            //& This is a comment template as an example to see
+            "backgroundColor": "transparent",
+            "bold": false,
+            "color": "#34E2E2",
+            "italic": false,
+            "strikethrough": false,
+            "tag": "&",
+            "underline": false
+        },
+        {
+            //: This is a comment template as an example to see
+            "backgroundColor": "transparent",
+            "bold": false,
+            "color": "#FFA333",
+            "italic": false,
+            "strikethrough": false,
+            "tag": ":",
+            "underline": false
+        },
+        {
+            //// This is a comment template as an example to see
+            "backgroundColor": "transparent",
+            "bold": false,
+            "color": "#EEEEEC",
+            "italic": false,
+            "strikethrough": true,
+            "tag": "//",
+            "underline": false
+        }
+    ],
+    "C_Cpp.autocompleteAddParentheses": true,
+    "chat.editor.fontSize": 14,
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    "cmake.configureOnEdit": false,
+    "cmake.configureOnOpen": false,
+    "cmake.configureSettings": {
+        "CMAKE_BUILD_TYPE": "Debug"
+    },
+    "cmake.setBuildTypeOnMultiConfig": true,
+    "cmake.sourceDirectory": "${workspaceFolder}",
+    "debug.console.fontSize": 14,
+    "debug.terminal.clearBeforeReusing": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.acceptSuggestionOnEnter": "smart",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "editor.colorDecorators": false,
+    "editor.defaultFormatter": null,
+    "editor.dragAndDrop": false,
+    "editor.dropIntoEditor.enabled": false,
+    "editor.fontFamily": "'PT Mono','Droid Sans Mono','monospace'",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 14,
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": true,
+    "editor.guides.bracketPairs": "active",
+    "editor.insertSpaces": true,
+    "editor.linkedEditing": true,
+    "editor.minimap.enabled": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.quickSuggestions": {
+        "comments": "off",
+        "other": "on",
+        "strings": "on"
+    },
+    "editor.quickSuggestionsDelay": 1000,
+    "editor.renderWhitespace": "none",
+    "editor.rulers": [
+        {
+            "color": "#FCE536",
+            "column": 81
+        }
+    ],
+    "editor.suggest.insertMode": "replace",
+    "editor.tabSize": 4,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "editor.wordWrap": "bounded",
+    "editor.wordWrapColumn": 80,
+    "editor.wrappingIndent": "same",
+    "errorLens.excludePatterns": [
+        "**/*.md"
+    ],
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "files.associations": {
+        // Without this line, VS Code (C/C++) automatically formats a *.h.in
+        // file like a *.h file, and cmake returns errors
+        "*.h.in": "cmake"
+    },
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "html.format.indentInnerHtml": true,
+    "markdown.extension.tableFormatter.normalizeIndentation": true,
+    "markdown.extension.toc.levels": "3..5",
+    "markdown.preview.fontSize": 14,
+    "markdown.preview.markEditorSelection": false,
+    "markdown.preview.typographer": true,
+    "markdown.updateLinksOnFileMove.enabled": "always",
+    "markdown.validate.enabled": true,
+    "markdown.validate.fileLinks.markdownFragmentLinks": "warning",
+    "markdown.validate.unusedLinkDefinitions.enabled": "warning",
+    "markdownlint.config": {
+        "default": true,
+        "MD041": false
+    },
+    "scm.inputFontSize": 14,
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "telemetry.telemetryLevel": "off",
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.minimumContrastRatio": 7,
+    "terminal.integrated.tabStopWidth": 4,
+    "terminalAllInOne.terminalTheme": "None",
+    "window.autoDetectColorScheme": true,
+    "window.zoomLevel": -0.5,
+    "workbench.colorTheme": "Tomorrow Night",
+    "workbench.editor.closeOnFileDelete": true,
+    "workbench.iconTheme": "bearded-icons",
+    "workbench.startupEditor": "none"
+}

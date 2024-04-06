@@ -1,0 +1,83 @@
+{
+    "version": 7,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 27,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "base",
+            "hidden": true,
+            "displayName": "Base Config",
+            "description": "Base config inherited by other configs",
+            "cacheVariables": {
+                "MAKE_CMAKE_USER_PRESETS": "ON",
+                "CMAKE_C_STANDARD": "23",
+                "CMAKE_C_STANDARD_REQUIRED": "OFF",
+                "CMAKE_C_EXTENSIONS ": "OFF",
+                "CMAKE_CXX_STANDARD": "23",
+                "CMAKE_CXX_STANDARD_REQUIRED": "OFF",
+                "CMAKE_CXX_EXTENSIONS ": "OFF"
+            }
+        },
+        {
+            "name": "debug",
+            "displayName": "Debug Config",
+            "description": "Config with debug info, code or asserts, but no optimization",
+            "inherits": "base",
+            "binaryDir": "${sourceDir}/build/debug",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        },
+        {
+            "name": "release",
+            "displayName": "Release Config",
+            "description": "Config with speed optimization, but no debug info, code or asserts",
+            "inherits": "base",
+            "binaryDir": "${sourceDir}/build/release",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release"
+            }
+        },
+        {
+            "name": "relinfo",
+            "displayName": "RelWithDebInfo Config",
+            "description": "Config with some optimization, debug info, but no debug code or asserts",
+            "inherits": "base",
+            "binaryDir": "${sourceDir}/build/relinfo",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "RelWithDebInfo"
+            }
+        },
+        {
+            "name": "relsize",
+            "displayName": "MinSizeRel Config",
+            "description": "Config with size optimization, but no debug info, code or asserts",
+            "inherits": "base",
+            "binaryDir": "${sourceDir}/build/relsize",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "MinSizeRel"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "debug",
+            "configurePreset": "debug"
+        },
+        {
+            "name": "release",
+            "configurePreset": "release"
+        },
+        {
+            "name": "relinfo",
+            "configurePreset": "relinfo"
+        },
+        {
+            "name": "relsize",
+            "configurePreset": "relsize"
+        }
+    ]
+}

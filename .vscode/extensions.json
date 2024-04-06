@@ -1,0 +1,28 @@
+{
+    "recommendations": [
+        "michaelcurrin.auto-commit-msg",
+        "beardedbear.beardedicons",
+        "aaron-bond.better-comments",
+        "ms-vscode.cpptools",
+        "twxs.cmake",
+        "ms-vscode.cmake-tools",
+        "cheshirekow.cmake-format",
+        "vadimcn.vscode-lldb",
+        "mcu-debug.debug-tracker-vscode",
+        "usernamehw.errorlens",
+        "donjayamanne.githistory",
+        "codezombiech.gitignore",
+        "yzhang.markdown-all-in-one",
+        "bierner.markdown-preview-github-styles",
+        "davidanson.vscode-markdownlint",
+        "mcu-debug.memory-view",
+        "webfreak.debug",
+        "foxundermoon.shell-format",
+        "timonwong.shellcheck",
+        "remisa.shellman",
+        "thinker.sort-json",
+        "yasht.terminal-all-in-one",
+        "ms-vscode.theme-tomorrowkit"
+    ],
+    "unwantedRecommendations": []
+}

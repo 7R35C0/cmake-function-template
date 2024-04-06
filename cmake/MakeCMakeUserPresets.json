@@ -1,0 +1,80 @@
+{
+    "version": 7,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 27,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "user-base",
+            "hidden": true,
+            "displayName": "User Base Config",
+            "description": "User base config inherited by other user configs",
+            "generator": "@USER_GENERATOR@",
+            "cacheVariables": {
+                "MAKE_CMAKE_USER_PRESETS": "OFF",
+                "CMAKE_C_COMPILER": "@USER_C_COMPILER@",
+                "CMAKE_CXX_COMPILER": "@USER_CXX_COMPILER@"
+            }
+        },
+        {
+            "name": "user-debug",
+            "displayName": "User Debug Config",
+            "description": "User config with debug info, code or asserts, but no optimization",
+            "inherits": [
+                "user-base",
+                "debug"
+            ],
+            "binaryDir": "${sourceDir}/build/user-debug"
+        },
+        {
+            "name": "user-release",
+            "displayName": "User Release Config",
+            "description": "User config with speed optimization, but no debug info, code or asserts",
+            "inherits": [
+                "user-base",
+                "release"
+            ],
+            "binaryDir": "${sourceDir}/build/user-release"
+        },
+        {
+            "name": "user-relinfo",
+            "displayName": "User RelWithDebInfo Config",
+            "description": "User config with some optimization, debug info, but no debug code or asserts",
+            "inherits": [
+                "user-base",
+                "relinfo"
+            ],
+            "binaryDir": "${sourceDir}/build/user-relinfo"
+        },
+        {
+            "name": "user-relsize",
+            "displayName": "User MinSizeRel Config",
+            "description": "User config with size optimization, but no debug info, code or asserts",
+            "inherits": [
+                "user-base",
+                "relsize"
+            ],
+            "binaryDir": "${sourceDir}/build/user-relsize"
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "user-debug",
+            "configurePreset": "user-debug"
+        },
+        {
+            "name": "user-release",
+            "configurePreset": "user-release"
+        },
+        {
+            "name": "user-relinfo",
+            "configurePreset": "user-relinfo"
+        },
+        {
+            "name": "user-relsize",
+            "configurePreset": "user-relsize"
+        }
+    ]
+}
